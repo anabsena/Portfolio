@@ -49,10 +49,18 @@ header{
     display: none;
 }
 .foto{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
+    animation: go-back 1s infinite alternate;
 }
-
+@keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 .nome{
     width: 50%;
     height: 500px;
@@ -62,7 +70,8 @@ header{
     flex-direction: column;
     gap: 15px;
     text-transform: uppercase;
-    padding-top: 100px;
+    padding-top: 60px;
+    font-size: 25px;
 }
 .front{
     background-color: black;
@@ -74,6 +83,23 @@ header{
     font-size: 20px;
     padding-top: 5px;
     text-transform: uppercase;
+}
+.curriculo img{
+    width: 30%;
+    height: 70%;
+}
+.curriculo{
+    width: 10vw;
+    height: 7vh;
+    background-color: transparent;
+    border-radius: 8px;
+}
+.curriculo a{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Jura', sans-serif;
+    font-size: 15px;
+    text-align: center;
 }
 main{
    display: flex;
@@ -152,7 +178,7 @@ main{
     background-color: #c19875;
 }
 .imgPc{
-    background-image: url(https://picrew.me/shareImg/org/202210/1774972_qsPAGlRw.png);
+    background-image: url(/imagens/picrew.png);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 300px;
@@ -270,6 +296,20 @@ hr{
     .menu{
         display: none;
     }
+    .nome{
+        font-size: 15px;
+    }
+    .foto{
+        width: 250px;
+        height: 250px;
+        animation: none;
+    }
+    .curriculo{
+        width: 15vw;
+        height: 7vh;
+        background-color: transparent;
+        border-radius: 8px;
+    }
     #sobreMim{
         height: 100vh;
         display: flex;
@@ -377,6 +417,7 @@ hr{
         width: 300px;
         padding-top: 0px;
         margin: 0px;
+        font-size: 15px;
     }
     .front{
         width: 280px;
