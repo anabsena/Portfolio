@@ -1,663 +1,111 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: transparent;
-    
-}
-.container{
-    width: 100%;
-    height: 640px;
-    background-image: linear-gradient( 180deg, #f0cda2 0%, #ce8d65 52%, #0d0d0d 100%); 
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-}
-header{
-    background: rgba(196, 196, 196, 0.11);
-    backdrop-filter: blur(10px);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    text-transform: uppercase;
-}
-.logo img{
-    width: 147.6px;
-    height: 120px;
-    margin-left: 50px;
-}
-.menu{
-    display: flex;
-    gap: 30px;
-    padding-right: 20px;
-}
-.menu a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Markazi Text', serif;
-    font-size: 20px;
-    border-radius: 2px; 
-}
-.menu a:hover{
-    background-color: #FFFFFF;
+<head>
+    <!-- serve para indicar os caracteres que vão ser utilizados -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- dizer que pode ser usado em varios dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta tag que ajuda no seo -->
+    <meta name="description" content="Portfólio de estudante de Analise e desenvolvimento de sistemas">
+    <title>Portfólio | Ana Beatriz</title>
+    <link rel="icon" type="imagem/png" href="imagens/desenho.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap" rel="stylesheet">
+    <!-- fonte sobre mim -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
 
-}
-#menuMobile{
-    display: none;
-}
-.foto{
-    width: 400px;
-    height: 400px;
-    animation: go-back 1s infinite alternate;
-}
-@keyframes go-back {
-    from {
-      transform: translateX(100px);
-    }
-    to {
-      transform: translateX(0);
-    }
-  }
-.nome{
-    width: 50%;
-    height: 500px;
-    font-family: 'Jura', sans-serif;
-    margin: 200px 0 0 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-transform: uppercase;
-    padding-top: 60px;
-    font-size: 25px;
-}
-.front{
-    background-color: black;
-    border-radius: 5px;
-    text-align: center;
-    color: #FFFFFF;
-    width: 270px;
-    height: 40px;
-    font-size: 20px;
-    padding-top: 5px;
-    text-transform: uppercase;
-}
-.curriculo img{
-    width: 30%;
-    height: 70%;
-}
-.curriculo{
-    width: 10vw;
-    height: 7vh;
-    background-color: transparent;
-    border-radius: 8px;
-}
-.curriculo a{
-    text-decoration: none;
-    color: #000000;
-    font-family: 'Jura', sans-serif;
-    font-size: 15px;
-    text-align: center;
-}
-main{
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-    align-items: center;
-}
-#sobreMim{
-    width: 100%;
-    height: 640px;
-    background-color: #0d0d0d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 35px;
-}
-.descricao{
-    width: 50vw;
-    height: 300px;
-    color: #FFFFFF;
-    font-size: 20px;
-    font-family: 'Noto Sans Mono', monospace;
-}
-.descricao h1{
-    font-size: 100px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family:'Times New Roman', Times, serif;
-}
-.minhaFoto{
-    width: 40vw;
-    height: 500px;
-    border-radius: 50%;
-}
-#formacao{
-    width: 100%;
-    height: 640px;
-    background-image: linear-gradient( 0deg, #282825, 30%, #282825 52%, #0d0d0d 100%);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
+<body>
+    <div class="container">
+    <header id="menu">
+        <div class="logo"> <img src="imagens/Logo.png" alt="AB"></div>
+            <nav class="menu">
+                <a href="#Inicio">Inicio</a>
+                <a href="#sobreMim">Sobre mim</a>
+                <a href="#formacao">Estudos</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+    </header>
+    <main id="Inicio">
+        <div class="nome">
+            <div>
+            <h1>Olá, Meu nome é</h1><br>
+            <h1>Ana Beatriz Sena!</h1></div>
+            <div class="front">Front-end Developer<></div>
+            <button class="curriculo"><a href="imagens/Curriculo.pdf"><img src="imagens/Dowload.png" alt=""> Curriculo</a></button>
+        </div>
+        <article>
+            <img src="imagens/desenho.png" alt="desenho" class="foto">
+        </article>
+    </main>
+</div>
+    <section id="sobreMim">
+        <div ><img class="minhaFoto" src="imagens/MinhaFoto.jpeg" alt="minha foto"></div>
+        <div class="descricao"> 
+            <h1> Sobre mim </h1> 
+            <hr><br>
+            <p> Meu nome é Ana Beatriz Sena, tenho 18 anos e moro em Ivaiporã Pr. Sou apaixonada por criações e amo desenhar. Entrei para o ramo de tecnologia após alguns contatos com logica para programação, foi quando decidi entrar para a faculdade de ADS. Me apaixonei pela area de front-end e todas as suas possibilidades, quero me especializar cada vez mais para ser uma desenvolvedora front-end.</p></div>
+    </section>
+    <section id="formacao">
+        <div class="cont">
+            <h1 class="palavra">Estudos</h1>
+            <div class="Formações">
+                <div class="descriçãoFacul">
+                    <h2>Analise e Desenvolvimento de Sistemas</h2>
+                    <h4>Atualmente cursando o segundo periodo na faculdade Ucp Univale</h4>
+                    <hr>
+                    <h2>Curso de web design completo:HTML5, CSS3 e JS</h2>
+                    <h4>Em andamento pela plataforma de estudos Udemy</h4>
+                    <hr>
+                    <h2>Curso de HTML avançado</h2>
+                    <h4>6h pela plataforma Fundação Bradesco</h4>
+                    <hr>
+                    <h2>Curso Inovando com CSS</h2>
+                    <h4>26h pela plataforma Fundação Bradesco</h4>
+                </div>
+                    <div class="imgAvatar"><img src="/imagens/avatar.png" alt=""></div> 
+            </div>
+        </div>
+            
+    </section>
+    <section id="projetos">
+        <h1 class="TituloProjetos">Projetos</h1>
+        <div class="divProj">
+            <section class="relogioD">
+            <div class="projetinho" id="relogio"><a href="https://anabsena.github.io/Relogio_Digital/"><img src="/imagens/Relogio.jpeg" alt=""></a></div>
+            <h1>Relógio digital</h1>
+            </section>
+            <div class="projetinho"><h1>Em breve</h1></div>
+            <div class="projetinho"><h1>Em breve</h1></div>
+        </div>
+    </section>
+    <section class="redesSociais" id="contato">
+            <h1>Redes Sociais<hr></h1>
+            
+            <div class="icones">
+                <div class="Github"><a href="https://github.com/anabsena"><img src="imagens/Github.png" alt="Github" ></a></div> 
+                <div class="linkedln"><a href="https://www.linkedin.com/in/ana-beatriz-sena-546b6722a/"><img src="imagens/linkedln.png" alt="linkedln" ></a></div>
+                <div class="instagram"><a href="https://www.instagram.com/ana_beatriz_sena/"><img src="imagens/logoInstagram.png" alt=""></a></div>
+            </div>
+        </div>
+       
+    </section>
+    <div class="whatsapp"><a href="https://wa.me/5543999274825?text=Ol%C3%A1,%20vim%20direto%20do%20seu%20portif%C3%B3lio!%20Quero%20te%20conhecer%20melhor!"><img src="imagens/whatsapp.png" alt=""></a></div>
+    <section class="footer">
+        <h1>Copyright © 2022</h1>
+        <h1>Todos os direitos reservados</h1>
+    </section>
+    <script src="js/script.js"></script>
+</body>
 
-}
-.palavra{
-    font-size: 100px;
-    color: #000000;
-    text-transform: uppercase;
-    background-color: #ffffff;
-    border-radius: 40px;
-    font-family: 'Jura', sans-serif;
-    text-align: center;
-}
-.Formações{
-    display: flex;
-    justify-content: center;
-    gap: 400px;
-    align-items: center;
-}
-.cont{
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-.descriçãoFacul{
-    width: 300px;
-    height: auto;
-    color: #ffffff;
-    text-align: center;
-    font-family: 'Noto Sans Mono', monospace;
-    font-size: 12px;
-}
-.descriçãoFacul hr{
-    width: 100%;
-    background-color: #c19875;
-}
-.imgPc{
-    background-image: url(/imagens/avatar.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 300px;
-    height: 300px;
-    border-radius: 30px;
-
-}
-#projetos{
-    width: 100%;
-    height: 640px;
-    background-image: linear-gradient( 0deg, #8d4925, 30%, #8d4925 52%, #282825 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.TituloProjetos{
-    font-size: 100px;
-    text-transform: uppercase;
-}
-.divProj{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-}
-.projetinho{
-    background-color: #c19875;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    transition: transform 1s;
-    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.56);
-}
-.projetinho h1{
-    background-color: #000000;
-    width: 100%;
-    height: 50px;
-    color:#ffffff;
-    text-align: center;
-    padding-top: 10px;
-}
-.projetinho:hover{
-    width: 280px;
-    height: 280px;
-
-    transform: scale(1.1);
-}
-#contato{
-    width: 100%;
-    height: 640px;
-    background-image: linear-gradient( 0deg, #c57d56, 30%, #c57d56 52%, #8d4925 100%);
-}
-.redesSociais h1{
-    font-size: 100px;
-    text-align: center;
-}
-.redesSociais{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-}
-.icones{
-    display: flex;
-}
-.Github img{
-    width: 200px;
-    height: 200px;
-}
-.linkedln img{
-    width: 390px;
-    height: 200px;
-}
-.instagram img{
-    width: 220px;
-    height: 200px;
-}
-.whatsapp img{
-    width: 90px;
-    height: 90px;
-    position: fixed;
-    right: 73px;
-    bottom: 10px;
-    background: #0d7b00;
-    z-index: 999;
-    padding: 0px;
-    border-radius: 50px;
-    transition: .5s;
-}
-hr{
-    background-color: #000000;
-    width: 650px;
-    height: 3px;
-    border: #000000;
-}
-.footer{
-    background-color: #f0cda2;
-    text-align: center;
-    font-family: 'Noto Sans Mono', monospace;
-    font-size: 10px;
-    padding-top: 30px;
-    height: 15vh;
-}
-@media only screen and (max-width: 769px){
-    header{
-        position: relative;
-    }
-    main{
-        margin-top: -150px;
-    }
-    .menu{
-        display: none;
-    }
-    .nome{
-        font-size: 15px;
-    }
-    .foto{
-        width: 250px;
-        height: 250px;
-        animation: none;
-    }
-    .curriculo{
-        width: 15vw;
-        height: 7vh;
-        background-color: transparent;
-        border-radius: 8px;
-    }
-    #sobreMim{
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        
-    }
-    #sobreMim hr{
-        width: 95%;
-    }
-    .descricao{
-        width: 80vw;
-        height: auto;
-        font-size: 15px;
-    }
-    .descricao h1{
-        font-size: 50px;
-    }
-    .minhaFoto{
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-    }
-    #formacao{
-        height: 100vh;
-    }
-    .palavra{
-        font-size: 70px;
-        text-align: center;
-    }
-    .Formações{
-        gap: 50px;
-    }
-    .cont{
-        gap: 100px;
-    }
-    .imgPc{
-        width: 250px;
-        height: 250px;
-    }
-    #projetos{
-        height: 100vh;
-        gap: 50px;
-    }
-    .TituloProjetos{
-        font-size: 80px;
-
-    }
-    .divProj{
-        gap: 30px;
-    }
-    .projetinho{
-        width: 200px;
-        height: 200px;
-    }
-    #contato{
-        height: 100vh;
-    }
-    .redesSociais h1{
-        font-size: 80px;
-    }
-    .Github img{
-        width: 100px;
-        height: 100px;
-    }
-    .linkedln img{
-        width: 240px;
-        height: 115px;
-    }
-    .instagram img{
-        width: 130px;
-        height: 110px;
-    }
-    #contato hr{
-        width: 98%;
-    }
-}
- @media only screen and (max-width: 520px){
-    body{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    header{
-        display: none;
-    }
-    main{
-        flex-direction: column-reverse;
-        margin-top: 50px;
-        gap: 10px;
-    }
-    .container{
-        width: 100vw;
-        height: 85vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 250px;
-    }
-    .foto{
-        width: 250px;
-        height: 250px;
-    }
-    .nome{
-        width: 300px;
-        padding-top: 0px;
-        margin: 0px;
-        font-size: 15px;
-    }
-    .front{
-        width: 280px;
-        height: 35px;
-    }
-    #sobreMim{
-        width: 100vw;
-        height: 70vh;
-        gap: 40px;
-    }
-    #formacao{
-        width: 100vw;
-        height: 70vh;
-    }
-    .palavra{
-        font-size: 50px;
-    }
-    .Formações{
-        flex-direction: column;
-        gap: 10px;
-    }
-    .cont{
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-    .descriçãoFacul{
-        width: 300px;
-        height: auto;
-        font-size: 9px;
-    }
-    .descriçãoFacul hr{
-        width: 100%;
-    }
-    .imgPc{
-        width: 200px;
-        height: 200px;
-
-    }
-    .descricao{
-        width: 350px;
-        height: 300px;
-        font-size: 11px;
-    }
-    .descricao h1{
-        font-size: 40px;
-    }
-    .minhaFoto{
-        width: 250px;
-        height: 250px;
-    }
-    #projetos{
-        width: 100vw;
-        height: 125vh;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .TituloProjetos{
-        font-size: 60px;
-    }
-    .divProj{
-        flex-direction: column;
-        gap: 15px;
-    }
-    .projetinho{
-        width: 250px;
-        height: 250px;
-    }
-    #contato{
-        width: 100vw;
-        height: 70vh;
-    }
-    .redesSociais h1{
-        font-size: 65px;
-        text-align: center;
-    }
-    .icones{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .Github img{
-        width: 100px;
-        height: 100px;
-    }
-    .linkedln img{
-        width: 260px;
-        height: 130px;
-    }
-    .instagram img{
-        width: 110px;
-        height: 100px;
-    }
-    .whatsapp img{
-        width: 70px;
-        height: 70px;
-        right: 30px;
-    }
-    hr{
-        width: 99%;
-        height: 3px;
-    }
-    .footer{
-        width: 100vw;
-    }
-    }
-    @media only screen and (max-width: 400px){
-        body{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-        header{
-            display: none;
-        }
-        main{
-            flex-direction: column-reverse;
-            margin-top: 50px;
-            gap: 10px;
-        }
-        .container{
-            width: 100vw;
-            height: 80vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 300px;
-        }
-        .foto{
-            width: 250px;
-            height: 250px;
-        }
-        .nome{
-            width: 300px;
-            padding-top: 0px;
-            margin: 0px;
-        }
-        .front{
-            width: 280px;
-            height: 35px;
-        }
-        #sobreMim{
-            width: 100vw;
-            height: 80vh;
-            gap: 35px;
-        }
-        #formacao{
-            width: 100vw;
-            height: 85vh;
-        }
-        .palavra{
-            font-size: 50px;
-        }
-        .Formações{
-            flex-direction: column;
-            gap: 10px;
-        }
-        .cont{
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-        .descriçãoFacul{
-            width: 300px;
-            height: auto;
-            font-size: 9px;
-        }
-        .descriçãoFacul hr{
-            width: 100%;
-        }
-        .imgPc{
-            width: 200px;
-            height: 200px;
-    
-        }
-        .descricao{
-            width: 350px;
-            height: 300px;
-            font-size: 11px;
-        }
-        .descricao h1{
-            font-size: 40px;
-        }
-        .minhaFoto{
-            width: 250px;
-            height: 250px;
-        }
-        #projetos{
-            width: 100vw;
-            height: 150vh;
-            flex-direction: column;
-            gap: 20px;
-        }
-        .TituloProjetos{
-            font-size: 60px;
-        }
-        .divProj{
-            flex-direction: column;
-            gap: 15px;
-        }
-        .projetinho{
-            width: 250px;
-            height: 250px;
-        }
-        #contato{
-            width: 100vw;
-            height: 75vh;
-        }
-        .redesSociais h1{
-            font-size: 50px;
-            text-align: center;
-        }
-        .icones{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .Github img{
-            width: 100px;
-            height: 100px;
-        }
-        .linkedln img{
-            width: 260px;
-            height: 130px;
-        }
-        .instagram img{
-            width: 110px;
-            height: 100px;
-        }
-        .whatsapp img{
-            width: 70px;
-            height: 70px;
-            right: 30px;
-        }
-        hr{
-            width: 99%;
-            height: 3px;
-        }
-        .footer{
-            width: 100vw;
-        }
-        }
+</html>
