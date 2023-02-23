@@ -222,7 +222,7 @@ main{
 #relogio a{
     height: 100%;
 }
-.relogioD{
+.relogioD {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,6 +230,24 @@ main{
     margin-top: 40px;
 }
 .relogioD h1{
+    font-family: 'Jura', sans-serif;
+}
+#jogoVelha img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+#jogoVelha a{
+    height: 100%;
+}
+.jogoV {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+.jogoV h1{
     font-family: 'Jura', sans-serif;
 }
 .projetinho h1{
